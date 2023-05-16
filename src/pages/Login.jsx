@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import Header from "../layout/Header";
+import Hero from "../layout/Hero";
+import Footer from "../layout/Footer";
 
 const Login = () => {
     useEffect(() => {
@@ -11,7 +13,13 @@ const Login = () => {
         document.head.appendChild(favicon);
     }, []);
 
-    return <Header />;
+    return (
+        <>
+            <Header />
+            <Hero />
+            <Footer />
+        </>
+    );
 };
 
 export default Login;
