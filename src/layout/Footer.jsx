@@ -5,7 +5,6 @@ import twitterIcon from "../assets/icon_twitter.svg";
 import instagramIcon from "../assets/icon_instagram.svg";
 import emailIcon from "../assets/icon_mail.svg";
 
-
 const Footer = () => {
     return (
         <footer class="footer">
