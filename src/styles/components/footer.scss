@@ -167,4 +167,101 @@
         font-weight: 300;
         font-size: 14px;
     }
+
+    @media (max-width: $sm) {
+        &__container {
+            flex-direction: column;
+            height: unset;
+            justify-content: unset;
+            padding: 0;
+
+            &__contact-us {
+                height: 400px;
+                width: unset;
+                align-items: center;
+
+                &__title {
+                    justify-content: center;
+                }
+
+                &__subscribe {
+                    width: 290px;
+                }
+                &__subscribe-btn {
+                    width: 70px;
+                }
+
+                &__contact {
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    line-height: 1.5;
+                }
+            }
+
+            &__quick-links {
+                flex-wrap: wrap;
+                padding: 0;
+                margin: 0;
+                align-items: flex-start;
+                justify-content: center;
+
+                &__list {
+                    height: 350px;
+                    width: 180px;
+                    text-align: center;
+
+                    &:nth-last-child(1) {
+                        height: 150px;
+                    }
+                }
+            }
+        }
+
+        &__copyright {
+            height: 30px;
+            font-size: 14px;
+        }
+    }
+    @media (min-width: $sm) and (max-width: $md) {
+        &__container {
+            flex-direction: column;
+            height: unset;
+            justify-content: unset;
+
+            &__contact-us {
+                height: 400px;
+                width: unset;
+                align-items: center;
+
+                &__title {
+                    justify-content: center;
+                }
+
+                &__contact {
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    line-height: 1.5;
+                }
+            }
+
+            &__quick-links {
+                flex-wrap: wrap;
+                padding: 0;
+                margin: 0;
+                align-items: flex-start;
+                justify-content: center;
+
+                &__list {
+                    height: 400px;
+                    width: 180px;
+
+                    &:nth-last-child(1) {
+                        height: 150px;
+                    }
+                }
+            }
+        }
+    }
 }

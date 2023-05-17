@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const QuickLinksList = ({ heading, listItems }) => {
     return (
         <div class="footer__container__quick-links__list">
@@ -6,9 +8,9 @@ const QuickLinksList = ({ heading, listItems }) => {
             </span>
             <div class="footer__container__quick-links__list__list-item">
                 {listItems.map((item, index) => (
-                    <a key={index} href="/">
+                    <Link key={index} to={"/" + item}>
                         {item}
-                    </a>
+                    </Link>
                 ))}
             </div>
         </div>

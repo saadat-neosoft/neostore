@@ -1,5 +1,5 @@
 import LazyLoad from "react-lazy-load";
-import twoFactorAuthImg from "../assets/pana.png";
+import twoFactorAuthImg from "../../assets/pana.png";
 
 const HeroLeft = () => {
     return (

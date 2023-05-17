@@ -1,6 +1,6 @@
-import "../styles/components/hero.scss";
-import HeroLeft from "../components/HeroLeft";
-import HeroRight from "../components/HeroRight";
+import ".././styles/components/hero.scss";
+import HeroLeft from "../components/login/HeroLeft";
+import HeroRight from "../components/login/HeroRight";
 
 const Hero = () => {
     return (

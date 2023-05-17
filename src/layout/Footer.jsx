@@ -1,6 +1,6 @@
-import "../styles/components/footer.scss";
-import FooterCopyright from "../components/FooterCopyright";
-import FooterContainer from "../components/FooterContainer";
+import ".././styles/components/footer.scss";
+import FooterCopyright from "../components/login/FooterCopyright";
+import FooterContainer from "../components/login/FooterContainer";
 
 const Footer = () => {
     return (

@@ -1,23 +1,24 @@
-import twitterIcon from "../assets/icon_twitter.svg";
-import instagramIcon from "../assets/icon_instagram.svg";
-import facebookIcon from "../assets/icon_facebook.svg";
+import twitterIcon from "../../assets/icon_twitter.svg";
+import instagramIcon from "../../assets/icon_instagram.svg";
+import facebookIcon from "../../assets/icon_facebook.svg";
+import { Link } from "react-router-dom";
 
 const FooterSocialLinks = () => {
     return (
         <div class="footer__container__contact-us__contact__icons">
-            <a href="/facebook">
+            <Link to="/facebook">
                 <img src={facebookIcon} alt="facebook-icon" title="Facebook" />
-            </a>
-            <a href="/instagram">
+            </Link>
+            <Link to="/instagram">
                 <img
                     src={instagramIcon}
                     alt="instagram-icon"
                     title="Instagram"
                 />
-            </a>
-            <a href="/twitter">
+            </Link>
+            <Link to="/twitter">
                 <img src={twitterIcon} alt="twitter-icon" title="Twitter" />
-            </a>
+            </Link>
         </div>
     );
 };

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const HeroRight = () => {
     return (
         <div class="hero__right">
@@ -21,20 +23,20 @@ const HeroRight = () => {
                     class="hero__right__form-control"
                     placeholder="••••••••••••"
                 />
-                <a
-                    href="/forgot-password"
+                <Link
+                    to="/forgot-password"
                     class="hero__right__form__forgot-password"
                 >
                     Forgot password
-                </a>
+                </Link>
                 <button type="submit" class="hero__right__form-btn">
                     Continue
                 </button>
                 <span class="hero__right__form-signup">
                     New to NeoSTORE?
-                    <a href="/signup" class="hero__right__form-signup-btn">
+                    <Link to="/signup" class="hero__right__form-signup-btn">
                         Sign up
-                    </a>
+                    </Link>
                 </span>
             </form>
         </div>

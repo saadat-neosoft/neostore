@@ -1,4 +1,4 @@
-import emailIcon from "../assets/icon_mail.svg";
+import emailIcon from "../../assets/icon_mail.svg";
 
 const FooterSubscription = () => {
     return (

@@ -1,5 +1,5 @@
-import FlashSale from "../components/FlashSale";
-import Logo from "../components/Logo";
+import FlashSale from "../components/login/FlashSale";
+import Logo from "../components/login/Logo";
 
 const Header = () => {
     return (
