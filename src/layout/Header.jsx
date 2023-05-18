@@ -1,12 +1,12 @@
+import Navbar from "../components/home/Navbar";
 import FlashSale from "../components/login/FlashSale";
-import Logo from "../components/login/Logo";
 
 const Header = () => {
     return (
-        <header>
+        <>
             <FlashSale />
-            <Logo />
-        </header>
+            <Navbar />
+        </>
     );
 };
 

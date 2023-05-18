@@ -1,0 +1,22 @@
+@import "../variables";
+
+.navbar {
+    padding: 17px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: $sm) {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (min-width: $sm) and (max-width: $md) {
+        padding: 0px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

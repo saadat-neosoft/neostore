@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Header from "../layout/Header";
+import LoginHeader from "../layout/LoginHeader";
 import Hero from "../layout/Hero";
 import Footer from "../layout/Footer";
 
@@ -14,7 +14,7 @@ const Login = () => {
 
     return (
         <>
-            <Header />
+            <LoginHeader />
             <Hero />
             <Footer />
         </>

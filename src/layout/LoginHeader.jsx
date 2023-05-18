@@ -1,15 +1,13 @@
 import FlashSale from "../components/login/FlashSale";
 import Logo from "../components/login/Logo";
 
-const HomeHeader = () => {
+const Header = () => {
     return (
         <header>
             <FlashSale />
-            <nav>
-                <Logo />
-            </nav>
+            <Logo />
         </header>
     );
 };
 
-export default HomeHeader;
+export default Header;
