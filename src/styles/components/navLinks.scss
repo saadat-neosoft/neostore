@@ -1,6 +1,7 @@
+@import "../variables";
+
 .nav-links {
     display: flex;
-    // flex-grow: 1;
     align-items: center;
     justify-content: space-between;
     width: 496px;
@@ -10,5 +11,18 @@
         line-height: 16.8px;
         font-size: 14px;
         font-weight: 300;
+    }
+
+    @media (max-width: $sm) {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    @media (min-width: $sm) and (max-width: $md) {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
 }
