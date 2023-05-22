@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import Footer from "../layout/Footer";
 import Header from "../layout/Header";
 import HomeCarousel from "../components/home/HomeCarousel";
-import image1 from "../assets/heroHomePage.png";
-import image2 from "../assets/pana.png";
-// import image2 from "../assets/pana.png";
+import HomeSectionDepartment from "../layout/HomeSectionDepartment";
+import HomeSectionTrending from "../layout/HomeSectionTrending";
+import HomeSectionSpecialOffer from "../layout/HomeSectionSpecialOffer";
 
 const Home = () => {
     useEffect(() => {
@@ -19,6 +19,9 @@ const Home = () => {
         <>
             <Header />
             <HomeCarousel />
+            <HomeSectionDepartment />
+            <HomeSectionTrending />
+            <HomeSectionSpecialOffer />
             <Footer />
         </>
     );

@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../styles/components/homeCarousel.scss";
 import image1 from "../../assets/heroHomePage.png";
-import image2 from "../../assets/pana.png";
 import CustomArrowNext from "./CustomArrowNext";
 import CustomArrowPrev from "./CustomArrowPrev";
 
@@ -17,7 +16,7 @@ const HomeCarousel = () => {
         slidesToScroll: 1, // Number of slides to scroll per step
         prevArrow: <CustomArrowPrev />,
         nextArrow: <CustomArrowNext />,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 3000,
         cssEase: "linear",
     };
@@ -28,6 +27,7 @@ const HomeCarousel = () => {
                 <div>
                     <div>
                         <span
+                            className="hr-line"
                             style={{
                                 position: "absolute",
                                 marginTop: "150px",
@@ -39,6 +39,7 @@ const HomeCarousel = () => {
                             }}
                         ></span>
                         <span
+                            className="furniture"
                             style={{
                                 position: "absolute",
                                 marginTop: "150px",
@@ -53,6 +54,7 @@ const HomeCarousel = () => {
                             2022
                         </span>
                         <span
+                            className="new-arrivals"
                             style={{
                                 position: "absolute",
                                 marginTop: "408px",
@@ -66,6 +68,7 @@ const HomeCarousel = () => {
                             NEW ARRIVALS
                         </span>
                         <span
+                            className="spring-collection"
                             style={{
                                 position: "absolute",
                                 marginTop: "488px",
@@ -79,6 +82,7 @@ const HomeCarousel = () => {
                             SPRING <br /> COLLECTION
                         </span>
                         <button
+                            className="carousel-btn"
                             style={{
                                 position: "absolute",
                                 marginTop: "712px",
@@ -93,6 +97,7 @@ const HomeCarousel = () => {
                                 border: "none",
                                 borderRadius: "2px",
                                 color: "#fff",
+                                cursor: "pointer",
                             }}
                         >
                             Shop now
