@@ -9,6 +9,9 @@ import ProductShowcase from "../components/home/ProductShowcase";
 import HomeSectionFurniture from "../layout/HomeSectionFurniture";
 import HomeSectionBestSellers from "../layout/HomeSectionBestSellers";
 import HomeNewArrivals from "../layout/HomeNewArrivals";
+import HomeSectionBlog from "../layout/HomeSectionBlog";
+import NeoPost from "../layout/NeoPost";
+import HomeSectionSignUp from "../layout/HomeSectionSignUp";
 
 const Home = () => {
     useEffect(() => {
@@ -30,6 +33,9 @@ const Home = () => {
             <HomeSectionFurniture />
             <HomeSectionBestSellers />
             <HomeNewArrivals />
+            <HomeSectionBlog />
+            <NeoPost />
+            <HomeSectionSignUp />
             <Footer />
         </>
     );

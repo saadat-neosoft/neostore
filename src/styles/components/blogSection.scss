@@ -1,0 +1,105 @@
+.blog-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-cards {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        width: 399.48px;
+        height: 452.2px;
+        border: 1px solid #bfbfbf;
+
+        &__img-container {
+            position: relative;
+
+            &__date {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                width: 83.14px;
+                height: 83.14px;
+                background: #ffffff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                &__day {
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 45px;
+                    color: #282627;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    border-bottom: 1px solid #000000;
+                }
+
+                &__month {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #282627;
+                    padding-top: 2px;
+                }
+            }
+        }
+
+        &__topic-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            border-bottom: 0.5px solid #bfbfbf;
+            height: 100px;
+            padding: 10px;
+
+            &__category {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 14px;
+                text-transform: uppercase;
+                color: #bb0100;
+            }
+
+            &__title {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                color: #282627;
+            }
+        }
+
+        &__description-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 100px;
+            padding: 10px;
+
+            &__description {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+                color: #000000;
+            }
+
+            &__btn {
+                text-align: center;
+                text-decoration-line: underline;
+                color: #333333;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+}
