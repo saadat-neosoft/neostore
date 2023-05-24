@@ -1,0 +1,55 @@
+@import "../variables";
+
+.furniture-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__shop-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 15px;
+        background: #ededed;
+
+        &__btn {
+            width: 145px;
+            height: 36px;
+            background: #bb0100;
+            border-radius: 2px;
+            border: none;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            color: #ffffff;
+            cursor: pointer;
+        }
+    }
+
+    &__product {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        &__name {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #4f4f4f;
+        }
+
+        &__price {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #bb0100;
+        }
+    }
+}

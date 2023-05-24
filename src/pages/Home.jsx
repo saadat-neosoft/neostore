@@ -7,6 +7,8 @@ import HomeSectionTrending from "../layout/HomeSectionTrending";
 import HomeSectionSpecialOffer from "../layout/HomeSectionSpecialOffer";
 import ProductShowcase from "../components/home/ProductShowcase";
 import HomeSectionFurniture from "../layout/HomeSectionFurniture";
+import HomeSectionBestSellers from "../layout/HomeSectionBestSellers";
+import HomeNewArrivals from "../layout/HomeNewArrivals";
 
 const Home = () => {
     useEffect(() => {
@@ -26,6 +28,8 @@ const Home = () => {
             <HomeSectionSpecialOffer />
             <ProductShowcase />
             <HomeSectionFurniture />
+            <HomeSectionBestSellers />
+            <HomeNewArrivals />
             <Footer />
         </>
     );
