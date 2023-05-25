@@ -1,0 +1,143 @@
+.product-gallery {
+    display: flex;
+    padding: 10px 100px;
+
+    &__sort-section {
+        display: flex;
+        height: 30px;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        gap: 10px;
+
+        &__sort {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #4f4f4f;
+        }
+
+        &__view {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+        }
+    }
+
+    &__filter-section {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 92px;
+        width: 400px;
+
+        &__filter {
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+
+            &__title {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                color: #282627;
+                text-align: center;
+                border-bottom: 1px solid #000000;
+                padding-bottom: 3px;
+            }
+        }
+
+        &__colors {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.input-label {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    color: #7f7f7f;
+
+    &__colorbox-blue {
+        border: 1px solid #5e37ff !important;
+        background-color: #5e37ff !important;
+    }
+    &__colorbox-orange {
+        border: 1px solid #ff9437 !important;
+        background-color: #ff9437 !important;
+    }
+    &__colorbox-brown {
+        border: 1px solid #57453b !important;
+        background-color: #57453b !important;
+    }
+    &__colorbox-green {
+        border: 1px solid #157911 !important;
+        background-color: #157911 !important;
+    }
+    &__colorbox-cream {
+        border: 1px solid #f5eee1 !important;
+        background-color: #f5eee1 !important;
+    }
+
+    input[type="checkbox"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+
+        width: 20px;
+        height: 20px;
+        border: 1px solid #e91b1a;
+        border-radius: 2px;
+        background-color: transparent;
+        position: relative;
+
+        // Define the checked state styles
+        &:checked {
+            background-color: red;
+        }
+
+        &::after {
+            content: "\2713"; /* Unicode character for a checkmark */
+            position: absolute;
+            top: 42%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 16px;
+            color: #fff;
+            opacity: 0; /* Initially hidden */
+            font-weight: 900;
+        }
+
+        &:checked::after {
+            opacity: 1; /* Show the tick mark when the checkbox is checked */
+        }
+    }
+
+    &__search-container {
+        border: 1px solid #bcbddb;
+        background: #ffffff;
+        border-radius: 3px;
+        width: 203px;
+        height: 31px;
+        display: flex;
+        justify-content: space-around;
+
+        > input {
+            border: none;
+            outline: none;
+        }
+    }
+    &__numOfReviews {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        color: #282627;
+    }
+}
