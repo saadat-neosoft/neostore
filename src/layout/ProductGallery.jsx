@@ -6,18 +6,21 @@ const ProductGallery = () => {
     return (
         <div className="product-gallery">
             <FilterSection />
-            <div className="product-gallery__sort-section">
-                <span className="product-gallery__sort-section__sort">
-                    Sort By:
-                </span>
-                <select className="product-gallery__sort-section__dropdown">
-                    <option value="Best Match">Best Match</option>
-                </select>
-                <span className="product-gallery__sort-section__view">
-                    View
-                </span>
-                <img src={clarity} alt="" />
-                <img src={list} alt="" />
+            <div className="product-gallery__container">
+                <div className="product-gallery__sort-section">
+                    <span className="product-gallery__sort-section__sort">
+                        Sort By:
+                    </span>
+                    <select className="product-gallery__sort-section__dropdown">
+                        <option value="Best Match">Best Match</option>
+                    </select>
+                    <span className="product-gallery__sort-section__view">
+                        View
+                    </span>
+                    <img src={clarity} alt="" />
+                    <img src={list} alt="" />
+                </div>
+                
             </div>
         </div>
     );

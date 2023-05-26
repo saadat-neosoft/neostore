@@ -2,13 +2,22 @@
     display: flex;
     padding: 10px 100px;
 
+    &__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
     &__sort-section {
         display: flex;
         height: 30px;
         align-items: center;
         justify-content: flex-end;
         width: 100%;
-        gap: 10px;
+        gap: 15px;
+        padding: 15px;
+        align-self: flex-end;
 
         &__sort {
             font-weight: 500;
@@ -22,6 +31,14 @@
             font-size: 16px;
             line-height: 19px;
             color: #000000;
+        }
+
+        &__dropdown {
+            border: 1px solid #e7e6ef;
+            padding: 8px 15px;
+            text-align: center;
+            outline: none;
+            margin-right: 10px;
         }
     }
 
