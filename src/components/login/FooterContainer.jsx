@@ -3,7 +3,7 @@ import FooterQuickLinks from "./FooterQuickLinks";
 
 const FooterContainer = () => {
     return (
-        <div class="footer__container">
+        <div className="footer__container">
             <FooterContactUs />
             <FooterQuickLinks />
         </div>

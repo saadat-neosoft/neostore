@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const FooterSocialLinks = () => {
     return (
-        <div class="footer__container__contact-us__contact__icons">
+        <div className="footer__container__contact-us__contact__icons">
             <Link to="/facebook">
                 <img src={facebookIcon} alt="facebook-icon" title="Facebook" />
             </Link>

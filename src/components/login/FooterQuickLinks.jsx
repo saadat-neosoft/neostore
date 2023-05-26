@@ -30,7 +30,7 @@ const FooterQuickLinks = () => {
     const usefulLinks = ["Promotions", "Sitemap"];
 
     return (
-        <div class="footer__container__quick-links">
+        <div className="footer__container__quick-links">
             <QuickLinksList heading={"Categories"} listItems={categories} />
             <QuickLinksList
                 heading={"Customer Service"}

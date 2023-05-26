@@ -4,8 +4,10 @@ import FooterSocialLinks from "./FooterSocialLinks";
 
 const FooterContactUs = () => {
     return (
-        <div class="footer__container__contact-us">
-            <span class="footer__container__contact-us__title">NeoSTORE</span>
+        <div className="footer__container__contact-us">
+            <span className="footer__container__contact-us__title">
+                NeoSTORE
+            </span>
             <FooterSubscription />
             <FooterAddress />
             <FooterSocialLinks />

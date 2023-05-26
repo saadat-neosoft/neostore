@@ -1,6 +1,8 @@
 const FooterCopyright = () => {
     return (
-        <span class="footer__copyright">©Neostore - All Rights Reserved</span>
+        <span className="footer__copyright">
+            ©Neostore - All Rights Reserved
+        </span>
     );
 };
 

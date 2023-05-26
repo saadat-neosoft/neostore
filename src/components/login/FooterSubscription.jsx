@@ -5,13 +5,13 @@ const FooterSubscription = () => {
         <form
             action="/email-subscription"
             method="post"
-            class="footer__container__contact-us__subscribe"
+            className="footer__container__contact-us__subscribe"
         >
             <img src={emailIcon} alt="email-icon" />
             <input type="email" placeholder="Your email address" />
             <button
                 type="submit"
-                class="footer__container__contact-us__subscribe-btn"
+                className="footer__container__contact-us__subscribe-btn"
             >
                 subscribe
             </button>
