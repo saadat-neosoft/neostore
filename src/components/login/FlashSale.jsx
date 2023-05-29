@@ -3,9 +3,10 @@ import "../../styles/components/flashSale.scss";
 
 const FlashSale = () => {
     return (
-        <Link to="/flash-sale" className="flash-sale">
-            MARKDOWNS: UP TO 70% OFF SHOP NOW
-        </Link>
+        <div to="/flash-sale" className="flash-sale">
+            MARKDOWNS: UP TO 70% OFF{"  "}
+            <Link className="flash-sale__btn">SHOP NOW</Link>
+        </div>
     );
 };
 

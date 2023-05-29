@@ -4,19 +4,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 44px;
     background: $color-primary;
     color: white;
     font-weight: 500;
     font-size: 16px;
     text-align: center;
+    gap: 4px;
+    padding: 12px 15px;
+
+    &__btn {
+        cursor: pointer;
+        color: white;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: underline;
+    }
 
     @media (max-width: $sm) {
-        height: 30px;
         font-size: 14px;
+        padding: 8px 15px;
+
+        &__btn {
+            font-size: 14px;
+        }
     }
     @media (min-width: $sm) and (max-width: $md) {
-        height: 40px;
+        padding: 8px 15px;
         font-size: 16px;
     }
 }

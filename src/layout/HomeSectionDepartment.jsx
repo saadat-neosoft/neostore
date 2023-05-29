@@ -6,7 +6,7 @@ const HomeSectionDepartment = () => {
 
     const text = "Sitewide Discounts & Savings of up to 25%";
     return (
-        <div className="home-section">
+        <div className="home-section container">
             <HomeSectionHeader title={title} text={text} />
             <DepartmentCategories />
         </div>
