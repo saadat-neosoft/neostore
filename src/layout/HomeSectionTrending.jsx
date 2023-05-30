@@ -7,7 +7,7 @@ const HomeSectionTrending = () => {
     const text =
         "Explore a wide range of affordable, well-designed and functional home furnishing solutions";
     return (
-        <div className="home-section">
+        <div className="home-section container">
             <HomeSectionHeader title={title} text={text} />
             <TrendingItem />
         </div>

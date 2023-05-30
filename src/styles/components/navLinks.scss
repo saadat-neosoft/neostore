@@ -10,7 +10,11 @@
         color: #282627;
         line-height: 16.8px;
         font-size: 14px;
-        font-weight: 400;
+        font-weight: 500;
+
+        &:hover {
+            color: #bb0100;
+        }
     }
 
     @media (max-width: $sm) {

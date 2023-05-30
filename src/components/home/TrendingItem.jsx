@@ -9,7 +9,7 @@ const TrendingItem = () => {
     return (
         <div className="home-section__trending-items">
             <div className="home-section__trending-items__item">
-                <img src={whiteChair} alt="" height="235.2px" width="235.2px" />
+                <img src={whiteChair} alt="" />
                 <span className="home-section__trending-item-title">
                     White Wooden Chair
                 </span>
@@ -18,7 +18,7 @@ const TrendingItem = () => {
                 </span>
             </div>
             <div className="home-section__trending-items__item">
-                <img src={modernSofa} alt="" height="235.2px" width="235.2px" />
+                <img src={modernSofa} alt="" />
                 <span className="home-section__trending-item-title">
                     White Wooden Chair
                 </span>
@@ -27,12 +27,7 @@ const TrendingItem = () => {
                 </span>
             </div>
             <div className="home-section__trending-items__item">
-                <img
-                    src={jaguarChair}
-                    alt=""
-                    height="235.2px"
-                    width="235.2px"
-                />
+                <img src={jaguarChair} alt="" />
                 <span className="home-section__trending-item-title">
                     White Wooden Chair
                 </span>
@@ -41,12 +36,7 @@ const TrendingItem = () => {
                 </span>
             </div>
             <div className="home-section__trending-items__item">
-                <img
-                    src={modernClock}
-                    alt=""
-                    height="235.2px"
-                    width="235.2px"
-                />
+                <img src={modernClock} alt="" />
                 <span className="home-section__trending-item-title">
                     White Wooden Chair
                 </span>
@@ -55,7 +45,7 @@ const TrendingItem = () => {
                 </span>
             </div>
             <div className="home-section__trending-items__item">
-                <img src={deskLamp} alt="" height="235.2px" width="235.2px" />
+                <img src={deskLamp} alt="" />
                 <span className="home-section__trending-item-title">
                     White Wooden Chair
                 </span>

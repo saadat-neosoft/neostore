@@ -16,13 +16,15 @@ const HomeSectionBestSellers = () => {
     return (
         <div>
             <HomeSectionHeader title={title} text={text} />
-            <div className="bestsellers">
-                <BestsellersItem pic={bs1} />
-                <BestsellersItem pic={bs2} />
-                <BestsellersItem pic={bs3} />
-                <BestsellersItem pic={bs4} />
-                <BestsellersItem pic={bs5} />
-                <BestsellersItem pic={bs6} />
+            <div className="container">
+                <div className="bestsellers">
+                    <BestsellersItem pic={bs1} />
+                    <BestsellersItem pic={bs2} />
+                    <BestsellersItem pic={bs3} />
+                    <BestsellersItem pic={bs4} />
+                    <BestsellersItem pic={bs5} />
+                    <BestsellersItem pic={bs6} />
+                </div>
             </div>
         </div>
     );

@@ -1,36 +1,48 @@
 .new-arrivals {
-    padding: 50px;
+    // padding: 50px;
+    margin: 100px 0;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
+
     &__1 {
         background-image: url("../../assets/na1.png");
         height: 454px;
-        width: 315px;
+        max-width: 315px;
+        width: 100%;
+
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 20px;
+        text-align: center;
     }
     &__2 {
         background-image: url("../../assets/na2.png");
         height: 454px;
-        width: 570px;
+
+        max-width: 570px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 20px;
+        text-align: center;
     }
     &__3 {
         background-image: url("../../assets/na3.png");
         height: 454px;
-        width: 315px;
+
+        max-width: 315px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 20px;
+        text-align: center;
     }
 
     &__heading {

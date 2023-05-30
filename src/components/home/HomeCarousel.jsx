@@ -22,85 +22,20 @@ const HomeCarousel = () => {
     };
 
     return (
-        <div className="home-carousel ">
+        <div className="home-carousel">
             <Slider {...settings}>
                 <div>
                     <div className="carousel-container">
-                        <span
-                            className="hr-line"
-                            // style={{
-                            //     position: "absolute",
-                            //     marginTop: "150px",
-                            //     marginLeft: "100px",
-                            //     zIndex: "1",
-                            //     background: "#111111",
-                            //     width: "4px",
-                            //     height: "100px",
-                            // }}
-                        ></span>
-                        <span
-                            className="furniture"
-                            // style={{
-                            //     position: "absolute",
-                            //     marginTop: "150px",
-                            //     marginLeft: "122px",
-                            //     zIndex: "1",
-                            //     lineHeight: "48px",
-                            //     fontWeight: "400",
-                            //     fontSize: "40px",
-                            // }}
-                        >
+                        <span className="hr-line"></span>
+                        <span className="furniture">
                             Furniture <br />
                             2022
                         </span>
-                        <span
-                            className="new-arrival"
-                            // style={{
-                            //     position: "absolute",
-                            //     marginTop: "408px",
-                            //     marginLeft: "100px",
-                            //     zIndex: "1",
-                            //     lineHeight: "48px",
-                            //     fontWeight: "700",
-                            //     fontSize: "20px",
-                            // }}
-                        >
-                            NEW ARRIVALS
-                        </span>
-                        <span
-                            className="spring-collection"
-                            // style={{
-                            //     position: "absolute",
-                            //     marginTop: "488px",
-                            //     marginLeft: "100px",
-                            //     zIndex: "1",
-                            //     lineHeight: "84px",
-                            //     fontWeight: "300",
-                            //     fontSize: "70px",
-                            // }}
-                        >
+                        <span className="new-arrival">NEW ARRIVALS</span>
+                        <span className="spring-collection">
                             SPRING <br /> COLLECTION
                         </span>
-                        <button
-                            className="carousel-btn"
-                            type="button"
-                            // style={{
-                            //     position: "absolute",
-                            //     marginTop: "712px",
-                            //     marginLeft: "100px",
-                            //     zIndex: "1",
-                            //     lineHeight: "16px",
-                            //     fontWeight: "500",
-                            //     fontSize: "14px",
-                            //     width: "145px",
-                            //     height: "36px",
-                            //     background: "#bb0100",
-                            //     border: "none",
-                            //     borderRadius: "2px",
-                            //     color: "#fff",
-                            //     cursor: "pointer",
-                            // }}
-                        >
+                        <button className="carousel-btn" type="button">
                             Shop now
                         </button>
                         <img

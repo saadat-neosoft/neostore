@@ -14,53 +14,55 @@ const HomeSectionFurniture = () => {
     return (
         <div>
             <HomeSectionHeader title={title} text={text} />
-            <div className="furniture-section">
-                <div className="furniture-section__item">
-                    <img src={blueSofa} alt="" height="300px" />
-                    <div className="furniture-section__shop-container">
-                        <div className="furniture-section__product">
-                            <span className="furniture-section__product__name">
-                                Sofas under
-                            </span>
-                            <span className="furniture-section__product__price">
-                                ₹12000.00
-                            </span>
+            <div className="container">
+                <div className="furniture-section">
+                    <div className="furniture-section__item">
+                        <img src={blueSofa} alt="" />
+                        <div className="furniture-section__shop-container">
+                            <div className="furniture-section__product">
+                                <span className="furniture-section__product__name">
+                                    Sofas under
+                                </span>
+                                <span className="furniture-section__product__price">
+                                    ₹12000.00
+                                </span>
+                            </div>
+                            <button className="furniture-section__shop-container__btn">
+                                Shop now
+                            </button>
                         </div>
-                        <button className="furniture-section__shop-container__btn">
-                            Shop now
-                        </button>
                     </div>
-                </div>
-                <div className="furniture-section__item">
-                    <img src={whiteSofaBed} alt="" height="300px" />
-                    <div className="furniture-section__shop-container">
-                        <div className="furniture-section__product">
-                            <span className="furniture-section__product__name">
-                                Sofas under
-                            </span>
-                            <span className="furniture-section__product__price">
-                                ₹12000.00
-                            </span>
+                    <div className="furniture-section__item">
+                        <img src={whiteSofaBed} alt=""  />
+                        <div className="furniture-section__shop-container">
+                            <div className="furniture-section__product">
+                                <span className="furniture-section__product__name">
+                                    Sofas under
+                                </span>
+                                <span className="furniture-section__product__price">
+                                    ₹12000.00
+                                </span>
+                            </div>
+                            <button className="furniture-section__shop-container__btn">
+                                Shop now
+                            </button>
                         </div>
-                        <button className="furniture-section__shop-container__btn">
-                            Shop now
-                        </button>
                     </div>
-                </div>
-                <div className="furniture-section__item">
-                    <img src={playTable} alt="" height="300px" />
-                    <div className="furniture-section__shop-container">
-                        <div className="furniture-section__product">
-                            <span className="furniture-section__product__name">
-                                Sofas under
-                            </span>
-                            <span className="furniture-section__product__price">
-                                ₹12000.00
-                            </span>
+                    <div className="furniture-section__item">
+                        <img src={playTable} alt=""/>
+                        <div className="furniture-section__shop-container">
+                            <div className="furniture-section__product">
+                                <span className="furniture-section__product__name">
+                                    Sofas under
+                                </span>
+                                <span className="furniture-section__product__price">
+                                    ₹12000.00
+                                </span>
+                            </div>
+                            <button className="furniture-section__shop-container__btn">
+                                Shop now
+                            </button>
                         </div>
-                        <button className="furniture-section__shop-container__btn">
-                            Shop now
-                        </button>
                     </div>
                 </div>
             </div>

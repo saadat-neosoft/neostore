@@ -8,4 +8,8 @@ body {
     max-width: 1330px;
     padding: 0 100px;
     margin: 0 auto;
+
+    @media (max-width: $sm) {
+        padding: 15px;
+    }
 }

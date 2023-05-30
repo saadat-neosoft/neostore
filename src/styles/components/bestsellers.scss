@@ -1,11 +1,12 @@
 @import "../variables";
 
 .bestsellers {
-    padding: 100px;
+    // padding: 100px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    margin: 100px 0;
 }
 
 .bestsellers-item {

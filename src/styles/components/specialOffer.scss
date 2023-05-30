@@ -1,11 +1,13 @@
 .special-offer-container {
     border: 1px solid #e91b1a;
-    margin: 100px 100px;
+    // margin: 100px 100px;
+    margin-top: 100px;
     padding: 54px;
-    // gap: 10px;
+    gap: 10px;
     display: flex;
     justify-content: space-between;
     position: relative;
+    max-width: 100%;
 }
 
 .special-offer {
@@ -42,7 +44,8 @@
         align-items: center;
         justify-content: center;
         gap: 25px;
-        width: 330px;
+        max-width: 330px;
+        width: 100%;
 
         &__title {
             font-weight: 500;
@@ -60,15 +63,30 @@
             align-self: flex-start;
         }
 
+        > img {
+            max-width: 330px;
+            width: 100%;
+        }
+
+        // &__img {
+        //     // max-width: 330px;
+        //     // max-height: 330px;
+        //     max-width: 100%;
+        //     // height: auto;
+        // }
+
         &__qty-total {
-            width: 326px;
+            max-width: 326px;
+            width: 100%;
             height: 6px;
             background: #ededed;
             border-radius: 5px;
         }
 
         &__qty-available {
-            width: 123px;
+            // max-width: 123px;
+            max-width: calc(100% - 123px);
+            width: 100%;
             height: 6px;
             background: #5dbe6b;
             border-radius: 5px;
@@ -78,7 +96,8 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 326px;
+            max-width: 326px;
+            width: 100%;
         }
 
         &__availability {
