@@ -7,6 +7,10 @@
     align-items: center;
     justify-content: space-between;
     margin: 100px 0;
+
+    @media (max-width: $sm) {
+        flex-direction: column;
+    }
 }
 
 .bestsellers-item {

@@ -1,9 +1,15 @@
+@import "../variables";
+
 .new-arrivals {
     // padding: 50px;
     margin: 100px 0;
     display: flex;
     justify-content: space-between;
     gap: 20px;
+
+    @media (max-width: $sm) {
+        flex-direction: column;
+    }
 
     &__1 {
         background-image: url("../../assets/na1.png");

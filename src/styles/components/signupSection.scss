@@ -1,9 +1,14 @@
+@import "../variables";
+
 .signup-container {
     background-image: url("../../assets/signup.png");
     height: 340px;
     background-repeat: no-repeat;
     background-position: right center;
     position: relative;
+    @media (max-width: $sm) {
+        margin-top: 20px;
+    }
 
     &__container {
         z-index: 1;
@@ -23,6 +28,10 @@
         line-height: 45px;
         text-transform: uppercase;
         color: #282627;
+
+        @media (max-width: $sm) {
+            font-size: 20px;
+        }
     }
 
     &__description {
@@ -30,6 +39,12 @@
         font-size: 20px;
         line-height: 20px;
         color: #7f7f7f;
+        text-align: center;
+
+        @media (max-width: $sm) {
+            font-size: 14px;
+            color: #282627;
+        }
     }
 
     &__form {
@@ -44,6 +59,7 @@
             border: none;
             outline: none;
             height: 24px;
+            background: transparent;
 
             &::placeholder {
                 font-weight: 300;
@@ -58,6 +74,10 @@
             background: transparent;
             cursor: pointer;
         }
+
+        @media (max-width: $sm) {
+            width: 300px;
+        }
     }
 }
 
@@ -68,4 +88,10 @@
     width: 70%;
     height: 100%;
     background: linear-gradient(90deg, #fafafa 0%, #ffffff 98.65%);
+
+    @media (max-width: $sm) {
+        background: unset;
+        width: unset;
+        height: unset;
+    }
 }

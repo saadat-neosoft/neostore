@@ -33,7 +33,7 @@ const HomeSectionFurniture = () => {
                         </div>
                     </div>
                     <div className="furniture-section__item">
-                        <img src={whiteSofaBed} alt=""  />
+                        <img src={whiteSofaBed} alt="" />
                         <div className="furniture-section__shop-container">
                             <div className="furniture-section__product">
                                 <span className="furniture-section__product__name">
@@ -49,7 +49,7 @@ const HomeSectionFurniture = () => {
                         </div>
                     </div>
                     <div className="furniture-section__item">
-                        <img src={playTable} alt=""/>
+                        <img src={playTable} alt="" />
                         <div className="furniture-section__shop-container">
                             <div className="furniture-section__product">
                                 <span className="furniture-section__product__name">
