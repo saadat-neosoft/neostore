@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/neostore/static/css/main.9f25583f.css",
-    "main.js": "/neostore/static/js/main.bb20c0e3.js",
+    "main.js": "/neostore/static/js/main.24a41650.js",
     "static/media/sofa-white.png": "/neostore/static/media/sofa-white.4ece4b3aa17e89008258.png",
     "static/media/heroHomePage.png": "/neostore/static/media/heroHomePage.a09f511b9822cc37bf7e.png",
     "static/media/na2.png": "/neostore/static/media/na2.c64734ac7df9451bc511.png",
@@ -70,10 +70,10 @@
     "static/media/chevronRight.svg": "/neostore/static/media/chevronRight.9232564ac5dec4990cff2a9a9888dd0d.svg",
     "static/media/sticker.svg": "/neostore/static/media/sticker.ddad986674435d6dd9e25154027b131a.svg",
     "main.9f25583f.css.map": "/neostore/static/css/main.9f25583f.css.map",
-    "main.bb20c0e3.js.map": "/neostore/static/js/main.bb20c0e3.js.map"
+    "main.24a41650.js.map": "/neostore/static/js/main.24a41650.js.map"
   },
   "entrypoints": [
     "static/css/main.9f25583f.css",
-    "static/js/main.bb20c0e3.js"
+    "static/js/main.24a41650.js"
   ]
 }
