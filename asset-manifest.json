@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/neostore/static/css/main.353b9aef.css",
+    "main.css": "/neostore/static/css/main.4019f374.css",
     "main.js": "/neostore/static/js/main.4aa3efa9.js",
     "static/media/sofa-white.png": "/neostore/static/media/sofa-white.4ece4b3aa17e89008258.png",
     "static/media/heroHomePage.png": "/neostore/static/media/heroHomePage.a09f511b9822cc37bf7e.png",
@@ -69,11 +69,11 @@
     "static/media/chevronLeft.svg": "/neostore/static/media/chevronLeft.a09e7e8e7bd18fc3dc29c056c0fec1e8.svg",
     "static/media/chevronRight.svg": "/neostore/static/media/chevronRight.9232564ac5dec4990cff2a9a9888dd0d.svg",
     "static/media/sticker.svg": "/neostore/static/media/sticker.ddad986674435d6dd9e25154027b131a.svg",
-    "main.353b9aef.css.map": "/neostore/static/css/main.353b9aef.css.map",
+    "main.4019f374.css.map": "/neostore/static/css/main.4019f374.css.map",
     "main.4aa3efa9.js.map": "/neostore/static/js/main.4aa3efa9.js.map"
   },
   "entrypoints": [
-    "static/css/main.353b9aef.css",
+    "static/css/main.4019f374.css",
     "static/js/main.4aa3efa9.js"
   ]
 }
