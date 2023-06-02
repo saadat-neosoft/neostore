@@ -14,7 +14,7 @@ const ProductShowcase = () => {
         <div className="container">
             <div className="showcase">
                 <div className="showcase__left">
-                    <img src={whiteSofa} alt="" height="700px" width="550px" />
+                    <img src={whiteSofa} alt="" height="700px" />
                     <img
                         className="showcase__left__sticker"
                         src={sticker}

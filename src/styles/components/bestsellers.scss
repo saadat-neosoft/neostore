@@ -3,13 +3,17 @@
 .bestsellers {
     // padding: 100px;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin: 100px 0;
+    flex-wrap: wrap;
 
     @media (max-width: $sm) {
         flex-direction: column;
+    }
+    @media (max-width: 992px) {
+        justify-content: center;
+        gap: 10px;
     }
 }
 

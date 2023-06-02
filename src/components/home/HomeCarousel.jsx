@@ -26,18 +26,17 @@ const HomeCarousel = () => {
             <Slider {...settings}>
                 <div>
                     <div className="carousel-container">
-                        <span className="hr-line"></span>
-                        <span className="furniture">
-                            Furniture <br />
-                            2022
-                        </span>
-                        <span className="new-arrival">NEW ARRIVALS</span>
-                        <span className="spring-collection">
-                            SPRING <br /> COLLECTION
-                        </span>
-                        <button className="carousel-btn" type="button">
-                            Shop now
-                        </button>
+                        <div className="container content">
+                            <span className="hr-line"></span>
+                            <span className="furniture">Furniture 2022</span>
+                            <span className="new-arrival">NEW ARRIVALS</span>
+                            <span className="spring-collection">
+                                SPRING <br /> COLLECTION
+                            </span>
+                            <button className="carousel-btn" type="button">
+                                Shop now
+                            </button>
+                        </div>
                         <img
                             src={image1}
                             alt=""
@@ -45,9 +44,27 @@ const HomeCarousel = () => {
                         />
                     </div>
                 </div>
-
                 <div>
-                    <img src={image1} alt="" className="home-carousel__img" />
+                    <div className="carousel-container">
+                        <div className="container content">
+                            <span className="furniture">
+                                Furniture <br />
+                                2022
+                            </span>
+                            <span className="new-arrival">NEW ARRIVALS</span>
+                            <span className="spring-collection">
+                                SPRING <br /> COLLECTION
+                            </span>
+                            <button className="carousel-btn" type="button">
+                                Shop now
+                            </button>
+                        </div>
+                        <img
+                            src={image1}
+                            alt=""
+                            className="home-carousel__img"
+                        />
+                    </div>
                 </div>
             </Slider>
         </div>

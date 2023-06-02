@@ -21,7 +21,7 @@
         text-decoration: underline;
     }
 
-    @media (max-width: $sm) {
+    @media (max-width: 400px) {
         font-size: 14px;
         padding: 8px 15px;
 
@@ -29,8 +29,8 @@
             font-size: 14px;
         }
     }
-    @media (min-width: $sm) and (max-width: $md) {
-        padding: 8px 15px;
-        font-size: 16px;
-    }
+    // @media (min-width: $sm) and (max-width: $md) {
+    //     padding: 8px 15px;
+    //     font-size: 16px;
+    // }
 }

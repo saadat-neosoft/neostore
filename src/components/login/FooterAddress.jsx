@@ -6,9 +6,17 @@ const FooterAddress = () => {
             </span>
 
             <span className="footer__container__contact-us__contact__number">
-                <span> +91 12345 67890 </span>
+                <span>
+                    <a className="tel" href="tel:+911234567890">
+                        +91 12345 67890
+                    </a>
+                </span>
                 <span>|</span>
-                <span> +91 12345 67890 </span>
+                <span>
+                    <a className="tel" href="tel:+911234567890">
+                        +91 12345 67890
+                    </a>
+                </span>
             </span>
 
             <p className="footer__container__contact-us__contact__address">

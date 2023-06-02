@@ -4,7 +4,7 @@ import FooterContainer from "../components/login/FooterContainer";
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer className="footer ">
             <FooterContainer />
             <FooterCopyright />
         </footer>

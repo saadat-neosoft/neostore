@@ -7,7 +7,7 @@ const CustomArrowPrev = ({ onClick }) => {
             alt=""
             className="slick-arrow slick-prev"
             onClick={onClick}
-            style={{ zIndex: "10", left: "25px" }}
+            style={{ zIndex: "1", left: "25px" }}
         />
     );
 };

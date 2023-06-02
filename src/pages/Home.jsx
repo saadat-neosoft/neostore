@@ -42,3 +42,7 @@ const Home = () => {
 };
 
 export default Home;
+
+// neopost furniture
+// signup container input
+// deal ends in section

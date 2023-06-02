@@ -28,6 +28,7 @@
         line-height: 45px;
         text-transform: uppercase;
         color: #282627;
+        text-align: center;
 
         @media (max-width: $sm) {
             font-size: 20px;
@@ -50,7 +51,9 @@
     &__form {
         border-bottom: 1px solid black;
         padding: 15px 0px;
-        width: 426px;
+        // width: 426px;
+        width: 50%;
+        max-width: 426px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -60,6 +63,7 @@
             outline: none;
             height: 24px;
             background: transparent;
+            width: 100%;
 
             &::placeholder {
                 font-weight: 300;

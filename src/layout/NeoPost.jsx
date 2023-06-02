@@ -19,13 +19,13 @@ const NeoPost = () => {
     const settings = {
         dots: false, // Show navigation dots
         infinite: true, // Enable infinite loop
-        speed: 800, // Transition speed in milliseconds
+        speed: 1300, // Transition speed in milliseconds
         slidesToShow: 5, // Number of slides to show at once
         slidesToScroll: 1, // Number of slides to scroll per step
         prevArrow: <CustomArrowPrev />,
         nextArrow: <CustomArrowNext />,
-        // autoplay: true,
-        autoplaySpeed: 3000,
+        autoplay: true,
+        autoplaySpeed: 1200,
         cssEase: "linear",
         responsive: [
             {
