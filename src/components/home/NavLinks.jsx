@@ -4,8 +4,8 @@ import "../../styles/components/navLinks.scss";
 const NavLinks = () => {
     return (
         <div className="nav-links">
-            <Link to="/home">Home</Link>
-            <Link to="/furniture">Furniture</Link>
+            <Link to="/">Home</Link>
+            <Link to="/product">Furniture</Link>
             <Link to="/home-decor">Home Decor</Link>
             <Link to="/blog">Blog</Link>
             <Link to="/sales">Sales</Link>

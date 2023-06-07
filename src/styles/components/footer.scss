@@ -2,12 +2,18 @@
 
 .container-2 {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     // align-items: center;
     // justify-content: center;
     // padding: 34px 0;
     padding-top: 34px;
     padding-bottom: 48px;
+    gap: 10px;
+
+    @media (max-width: 1030px) {
+        flex-direction: column-reverse;
+        // gap: 50px;
+    }
 }
 
 .footer {
@@ -134,7 +140,7 @@
 
         &__quick-links {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             // width: 100%;
             // padding-top: 15px;
             flex: 1;
@@ -148,9 +154,10 @@
                 flex-direction: column;
                 gap: 40px;
 
-                @media (max-width: 410px) {
-                    text-align: center;
-                    align-items: center;
+                @media (max-width: 661px) {
+                    // text-align: center;
+                    // align-items: center;
+                    width: 50%;
                 }
                 &__title {
                     color: white;
@@ -199,26 +206,34 @@
             padding: 0;
 
             &__contact-us {
-                height: 400px;
+                // height: 400px;
                 width: unset;
-                align-items: center;
+                // align-items: center;
 
-                &__title {
-                    justify-content: center;
-                }
+                // &__title {
+                //     // justify-content: center;
+                // }
 
                 &__subscribe {
-                    width: 290px;
+                    width: 250px;
+
+                    > input {
+                        width: 130px;
+                    }
                 }
                 &__subscribe-btn {
                     width: 70px;
                 }
 
                 &__contact {
-                    align-items: center;
-                    justify-content: center;
-                    text-align: center;
+                    // align-items: center;
+                    // justify-content: center;
+                    // text-align: center;
                     line-height: 1.5;
+
+                    &__number {
+                        font-size: 12px;
+                    }
                 }
             }
 
@@ -227,12 +242,22 @@
                 padding: 0;
                 margin: 0;
                 align-items: flex-start;
-                justify-content: center;
+                // justify-content: center;
 
                 &__list {
-                    height: 350px;
-                    width: 180px;
-                    text-align: center;
+                    // height: 350px;
+                    // width: 180px;
+                    // text-align: center;
+
+                    &__title {
+                        font-size: 13px;
+                    }
+
+                    &__list-item {
+                        > a {
+                            font-size: 12px;
+                        }
+                    }
 
                     &:nth-last-child(1) {
                         height: 150px;
@@ -253,18 +278,18 @@
             justify-content: unset;
 
             &__contact-us {
-                height: 400px;
+                // height: 400px;
                 width: unset;
-                align-items: center;
+                // align-items: center;
 
-                &__title {
-                    justify-content: center;
-                }
+                // &__title {
+                //     // justify-content: center;
+                // }
 
                 &__contact {
-                    align-items: center;
-                    justify-content: center;
-                    text-align: center;
+                    // align-items: center;
+                    // justify-content: center;
+                    // text-align: center;
                     line-height: 1.5;
                 }
             }
@@ -274,11 +299,11 @@
                 padding: 0;
                 margin: 0;
                 align-items: flex-start;
-                justify-content: center;
+                // justify-content: center;
 
                 &__list {
-                    height: 400px;
-                    width: 180px;
+                    // height: 400px;
+                    // width: 180px;
 
                     &:nth-last-child(1) {
                         height: 150px;
