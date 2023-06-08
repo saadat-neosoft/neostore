@@ -11,6 +11,8 @@
     text-align: center;
     gap: 4px;
     padding: 12px 15px;
+    z-index: 2;
+    position: relative;
 
     &__btn {
         cursor: pointer;

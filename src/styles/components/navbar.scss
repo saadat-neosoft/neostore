@@ -87,7 +87,7 @@
     &:checked ~ .navlist {
         // transform: translateY(0);
         transform: translateX(0);
-        display: static;
+        // display: static;
         // right: 0;
         transition: 0.6s all;
     }

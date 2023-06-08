@@ -3,12 +3,20 @@ import starFilled from "../../assets/star-filled.svg";
 import starUnfilled from "../../assets/star-unfilled.svg";
 import searchIcon from "../../assets/search.svg";
 
-const FilterSection = () => {
+const FilterSection = ({ isFilterVisible }) => {
     return (
         <form
             action="/search"
             method="get"
-            className="product-gallery__filter-section"
+            className={`product-gallery__filter-section`}
+            style={{
+                // "@media (max-width: 700px)": {
+                //     transform: `translateX(${isFilterVisible ? "0" : "-150%"})`,
+                // },
+
+                transform: `translateX(${isFilterVisible ? "0" : "-150%"})`,
+                // display: isFilterVisible ? "block" : "none",
+            }}
         >
             <div className="product-gallery__filter-section__filter">
                 <h3 className="product-gallery__filter-section__filter__title">

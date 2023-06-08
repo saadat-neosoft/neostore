@@ -17,3 +17,11 @@ body {
         padding: 0 15px;
     }
 }
+
+.visible {
+    transform: translateX(0) !important;
+}
+
+.not-visible {
+    transform: translate(-150%) !important;
+}

@@ -14,11 +14,33 @@ import showcase9 from "../assets/Rectangle 35 (8).png";
 
 import leftArrow from "../assets/keyboardArrowLeft.svg";
 import rightArrow from "../assets/keyboardArrowRight.svg";
+import { useEffect, useState } from "react";
 
 const ProductGallery = () => {
+    const [isFilterVisible, setFilterVisible] = useState(true);
+
+    const toggleFilter = () => {
+        setFilterVisible(!isFilterVisible);
+        console.log(isFilterVisible);
+    };
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth > 700) {
+                setFilterVisible(true);
+            }
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
     return (
         <div className="product-gallery container">
-            <FilterSection />
+            <FilterSection isFilterVisible={isFilterVisible} />
             <div className="product-gallery__container">
                 <div className="product-gallery__sort-section">
                     <span className="product-gallery__sort-section__sort">
@@ -35,6 +57,9 @@ const ProductGallery = () => {
                     </span>
                     <img src={clarity} alt="" />
                     <img src={list} alt="" />
+                    <button onClick={toggleFilter} className="filter-btn">
+                        Filter
+                    </button>
                 </div>
                 <div className="product-gallery__showcase">
                     <div className="product-gallery__showcase__card">
