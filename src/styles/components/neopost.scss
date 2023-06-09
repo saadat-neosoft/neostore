@@ -3,6 +3,7 @@
 .neopost {
     display: flex;
     flex-direction: column;
+    gap: 50px;
 
     &__carousel-img {
         width: 100%;

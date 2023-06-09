@@ -15,6 +15,7 @@ import showcase9 from "../assets/Rectangle 35 (8).png";
 import leftArrow from "../assets/keyboardArrowLeft.svg";
 import rightArrow from "../assets/keyboardArrowRight.svg";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const ProductGallery = () => {
     const [isFilterVisible, setFilterVisible] = useState(true);
@@ -28,6 +29,8 @@ const ProductGallery = () => {
         const handleResize = () => {
             if (window.innerWidth > 700) {
                 setFilterVisible(true);
+            } else if (window.innerWidth < 700) {
+                setFilterVisible(false);
             }
         };
 
@@ -62,7 +65,10 @@ const ProductGallery = () => {
                     </button>
                 </div>
                 <div className="product-gallery__showcase">
-                    <div className="product-gallery__showcase__card">
+                    <Link
+                        to="/product-detail"
+                        className="product-gallery__showcase__card"
+                    >
                         <div className="product-gallery__showcase__card__img-container">
                             <img src={showcase1} alt="" />
                         </div>
@@ -75,8 +81,11 @@ const ProductGallery = () => {
                                 ₹42.00
                             </span>
                         </div>
-                    </div>
-                    <div className="product-gallery__showcase__card">
+                    </Link>
+                    <Link
+                        to="/product-detail"
+                        className="product-gallery__showcase__card"
+                    >
                         <div className="product-gallery__showcase__card__img-container">
                             <img src={showcase2} alt="" />
                         </div>
@@ -89,8 +98,11 @@ const ProductGallery = () => {
                                 ₹42.00
                             </span>
                         </div>
-                    </div>
-                    <div className="product-gallery__showcase__card">
+                    </Link>
+                    <Link
+                        to="/product-detail"
+                        className="product-gallery__showcase__card"
+                    >
                         <div className="product-gallery__showcase__card__img-container">
                             <img src={showcase3} alt="" />
                         </div>
@@ -103,7 +115,7 @@ const ProductGallery = () => {
                                 ₹42.00
                             </span>
                         </div>
-                    </div>
+                    </Link>
                     <div className="product-gallery__showcase__card">
                         <div className="product-gallery__showcase__card__img-container">
                             <img src={showcase4} alt="" />

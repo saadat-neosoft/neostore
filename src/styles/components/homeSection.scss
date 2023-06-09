@@ -3,6 +3,10 @@
 .home-section {
     padding-top: 100px;
 
+    @media (max-width: 400px) {
+        padding-top: 50px;
+    }
+
     &__heading {
         display: flex;
         align-items: center;
