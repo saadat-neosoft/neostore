@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Product from "./pages/Product";
 import ProductDetail from "./pages/ProductDetail";
 
-import SwiperVertical from "./pages/SwiperVertical";
+import Cart from "./pages/Cart";
 
 function App() {
     return (
@@ -14,7 +14,7 @@ function App() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/product" element={<Product />} />
                 <Route path="/product-detail" element={<ProductDetail />} />
-                <Route path="/swiper" element={<SwiperVertical />} />
+                <Route path="/cart" element={<Cart />} />
             </Routes>
         </>
     );

@@ -3,6 +3,20 @@
 body {
     font-family: $primary-font;
     // overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: white;
+        border-left: 1px solid lightgray;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #bb0100;
+        border-radius: 5px;
+    }
 }
 
 .container {

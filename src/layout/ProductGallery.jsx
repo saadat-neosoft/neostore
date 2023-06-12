@@ -43,7 +43,10 @@ const ProductGallery = () => {
 
     return (
         <div className="product-gallery container">
-            <FilterSection isFilterVisible={isFilterVisible} />
+            <FilterSection
+                onClick={toggleFilter}
+                isFilterVisible={isFilterVisible}
+            />
             <div className="product-gallery__container">
                 <div className="product-gallery__sort-section">
                     <span className="product-gallery__sort-section__sort">
