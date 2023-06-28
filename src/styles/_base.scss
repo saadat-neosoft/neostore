@@ -1,41 +1,41 @@
 @import "variables";
 
 body {
-    font-family: $primary-font;
-    // overflow-x: hidden;
+  font-family: $primary-font;
+  // overflow-x: hidden;
 
-    &::-webkit-scrollbar {
-        width: 4px;
-    }
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
 
-    &::-webkit-scrollbar-track {
-        background: white;
-        border-left: 1px solid lightgray;
-    }
+  &::-webkit-scrollbar-track {
+    background: white;
+    border-left: 1px solid lightgray;
+  }
 
-    &::-webkit-scrollbar-thumb {
-        background: #bb0100;
-        border-radius: 5px;
-    }
+  &::-webkit-scrollbar-thumb {
+    background: #bb0100;
+    border-radius: 5px;
+  }
 }
 
 .container {
-    // max-width: 1330px;
+  // max-width: 1330px;
 
-    // padding: 0 100px;
-    max-width: 1270px;
+  // padding: 0 100px;
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media (max-width: $sm) {
     padding: 0 15px;
-    margin: 0 auto;
-
-    @media (max-width: $sm) {
-        padding: 0 15px;
-    }
+  }
 }
 
 .visible {
-    transform: translateX(0) !important;
+  transform: translateX(0) !important;
 }
 
 .not-visible {
-    transform: translate(-150%) !important;
+  transform: translate(-150%) !important;
 }

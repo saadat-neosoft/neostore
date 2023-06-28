@@ -1,0 +1,34 @@
+.summary {
+  display: flex;
+  flex-direction: column;
+  padding-top: 68px;
+  padding-bottom: 95px;
+
+  &__filter {
+    display: flex;
+    justify-content: flex-end;
+
+    &__input {
+      display: flex;
+      align-items: center;
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+      padding-left: 14px;
+
+      > input {
+        border: none;
+        outline: none;
+      }
+
+      &__title {
+        padding: 10px;
+        background: #e0e0e0;
+        font-weight: 600;
+        font-size: 14px;
+        color: #666666;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

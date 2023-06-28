@@ -1,0 +1,309 @@
+.accordion {
+  margin-top: 50px;
+  width: 100%;
+
+  &__item {
+    margin-bottom: 1rem;
+    border: 1px solid #bfbfbf;
+    padding: 30px;
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+  }
+
+  &__header {
+    cursor: pointer;
+    // padding: 0.5rem;
+    font-weight: 600;
+    font-size: 16px;
+
+    color: #bfbfbf;
+    width: 100%;
+  }
+
+  &__active {
+    color: black;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__other-payment {
+      margin-top: 35px;
+      &__title {
+        font-weight: 600;
+        font-size: 14px;
+        color: #666666;
+        margin-bottom: 10px;
+      }
+
+      &__options {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        border: 1px solid #cac8c8;
+        margin-bottom: 5px;
+
+        @media (max-width: 440px) {
+          font-size: 12px;
+        }
+      }
+    }
+
+    &__saved-payment {
+      margin-top: 17px;
+
+      &__title {
+        font-weight: 500;
+        font-size: 14px;
+        color: #666666;
+      }
+
+      &__container {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #666666;
+        padding: 15px;
+        border-radius: 8px;
+
+        @media (max-width: 440px) {
+          flex-direction: column;
+          align-self: unset;
+        }
+
+        &__input {
+          display: flex;
+          gap: 21px;
+
+          input[type="radio"] {
+            align-self: flex-start;
+          }
+
+          &__card {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-weight: 400;
+            color: #333333;
+          }
+        }
+
+        &__details {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 7px;
+
+          &__card {
+            font-weight: 700;
+            font-size: 14px;
+            color: #333333;
+          }
+
+          &__name {
+            font-weight: 400;
+            font-size: 12px;
+            color: #666666;
+          }
+        }
+      }
+    }
+
+    &__billing {
+      &__address {
+        margin-top: 17px;
+        font-weight: 400;
+        font-size: 15px;
+        color: #7f7f7f;
+        width: 284px;
+
+        @media (max-width: 440px) {
+          width: 200px;
+        }
+
+        &__same {
+          display: flex;
+          margin-top: 21px;
+          align-items: center;
+          gap: 10px;
+          color: #000;
+          font-weight: 400;
+          font-size: 14px;
+
+          &__title {
+            color: #000;
+            font-size: 14px;
+            font-weight: 400;
+          }
+
+          input[type="checkbox"] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+
+            width: 20px;
+            height: 20px;
+            border: 1px solid #e91b1a;
+            border-radius: 2px;
+            background-color: transparent;
+            position: relative;
+
+            @media (max-width: 700px) {
+              width: 10px;
+              height: 10px;
+            }
+
+            // Define the checked state styles
+            &:checked {
+              background-color: #bb0100;
+              background-image: url("../../assets/filter-tick.svg");
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: contain;
+            }
+
+            &::after {
+              content: ""; /* Unicode character for a checkmark */
+              // content: "\2713"; /* Unicode character for a checkmark */
+              position: absolute;
+              top: 42%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font-size: 16px;
+              color: #fff;
+              opacity: 0; /* Initially hidden */
+              font-weight: 900;
+            }
+
+            &:checked::after {
+              opacity: 1; /* Show the tick mark when the checkbox is checked */
+            }
+          }
+        }
+      }
+    }
+
+    &__method {
+      margin-top: 17px;
+      display: flex;
+      justify-content: space-between;
+
+      @media (max-width: 450px) {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      &__product {
+        display: flex;
+        gap: 12px;
+
+        &__details {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          &__title {
+            font-weight: 400;
+            font-size: 14px;
+            color: #666666;
+          }
+
+          &__price {
+            font-weight: 500;
+            font-size: 16px;
+            color: #333333;
+
+            &__old {
+              font-weight: 500;
+              font-size: 16px;
+              color: #c2c2c2;
+              margin-right: 10px;
+              text-decoration: line-through;
+            }
+          }
+
+          &__save {
+            color: #fe3f3f;
+            font-weight: 400;
+            font-size: 14px;
+            font-style: italic;
+            margin-top: 6px;
+          }
+
+          &__select {
+            background: #f2f2f2;
+            font-size: 12px;
+            font-weight: 600;
+            color: #333333;
+            border: none;
+            margin-top: 5px;
+            padding: 10px;
+            width: 80px;
+          }
+        }
+      }
+
+      &__option {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+
+        &__title {
+          font-weight: 500;
+          font-size: 14px;
+          color: #4f4f4f;
+        }
+
+        &__select {
+          background: #ededed;
+          font-weight: 400;
+          font-size: 12px;
+          color: #000;
+          padding: 10px;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      //   width: 100%;
+
+      &__locate {
+        display: flex;
+        color: #7f7f7f;
+        font-size: 14px;
+        font-weight: 600;
+        align-self: flex-end;
+        align-items: center;
+        margin-right: 30px;
+      }
+
+      &__input-container {
+        display: flex;
+        gap: 20px;
+        margin-top: 17px;
+
+        &__input {
+          border: 1px solid #bfbfbf;
+          color: gray;
+          padding: 13px;
+          width: 100%;
+          border-radius: 4px;
+          outline: none;
+
+          &::placeholder {
+            color: #bfbfbf;
+          }
+        }
+      }
+    }
+  }
+}

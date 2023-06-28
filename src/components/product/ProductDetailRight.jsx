@@ -61,10 +61,19 @@ const ProductDetailRight = ({ toggleCartNotification, cartNotification }) => {
                 <div className="product-detail__hr-line"></div>
                 <div className="product-detail__choose-color">Choose Color</div>
                 <div className="product-detail__colors">
-                    <img src={color1} alt="" />
-                    <img src={color2} alt="" />
-                    <img src={color3bg} alt="" />
-                    <img src={color4} alt="" />
+                    <button>
+                        <img src={color1} alt="" />
+                    </button>
+                    <button>
+                        <img src={color2} alt="" />
+                    </button>
+                    <button>
+                        <img src={color3bg} alt="" />
+                    </button>
+
+                    <button>
+                        <img src={color4} alt="" />
+                    </button>
                 </div>
                 <div className="product-detail__cart">
                     <button
@@ -101,8 +110,6 @@ const ProductDetailRight = ({ toggleCartNotification, cartNotification }) => {
                     </button>
                 </div>
             </div>
-
-          
         </>
     );
 };
