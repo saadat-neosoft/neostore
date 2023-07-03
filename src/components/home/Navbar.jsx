@@ -40,7 +40,7 @@ const Navbar = () => {
           </Link>
           {/* <input className="nav-input" type="checkbox" id="toggle" /> */}
           <span className="toggler-container" onClick={toggleNav}>
-            <label className="navbar-toggler" for="toggle">
+            <label className="navbar-toggler">
               <span className="bar"></span>
               <span className="bar"></span>
               <span className="bar"></span>

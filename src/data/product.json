@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "title": "Ultricies condimentum imperdiet",
+    "img": "Rectangle 35.png",
+    "oldPrice": 1000.0,
+    "newPrice": 500.0,
+    "color": "brown"
+  },
+  {
+    "id": 2,
+    "title": "Vitae suspendisse sed",
+    "img": "Rectangle 35 (1).png",
+    "oldPrice": 1500.0,
+    "newPrice": 1000.0,
+    "color": "green"
+  },
+  {
+    "id": 3,
+    "title": "Sed at fermentum",
+    "img": "Rectangle 35 (2).png",
+    "oldPrice": 2000.0,
+    "newPrice": 1500.0,
+    "color": "blue"
+  },
+  {
+    "id": 4,
+    "title": "Ultricies condimentum imperdiet",
+    "img": "Rectangle 35 (3).png",
+    "oldPrice": 2500.0,
+    "newPrice": 2000.0,
+    "color": "cream"
+  },
+  {
+    "id": 5,
+    "title": "Vitae suspendisse sed",
+    "img": "Rectangle 35 (4).png",
+    "oldPrice": 3000.0,
+    "newPrice": 2500.0,
+    "color": "green"
+  },
+  {
+    "id": 6,
+    "title": "Sed at fermentum",
+    "img": "Rectangle 35 (5).png",
+    "oldPrice": 3500.0,
+    "newPrice": 3000.0,
+    "color": "blue"
+  },
+  {
+    "id": 7,
+    "title": "Ultricies condimentum imperdiet",
+    "img": "Rectangle 35 (6).png",
+    "oldPrice": 4000.0,
+    "newPrice": 3500.0,
+    "color": "orange"
+  },
+  {
+    "id": 8,
+    "title": "Vitae suspendisse sed",
+    "img": "Rectangle 35 (7).png",
+    "oldPrice": 4500.0,
+    "newPrice": 4000.0,
+    "color": "green"
+  },
+  {
+    "id": 9,
+    "title": "Sed at fermentum",
+    "img": "Rectangle 35 (8).png",
+    "oldPrice": 5000.0,
+    "newPrice": 4500.0,
+    "color": "blue"
+  },
+  {
+    "id": 10,
+    "title": "Ultricies condimentum imperdiet",
+    "img": "Rectangle 35.png",
+    "oldPrice": 5500.0,
+    "newPrice": 5000.0,
+    "color": "brown"
+  },
+  {
+    "id": 11,
+    "title": "Vitae suspendisse sed",
+    "img": "Rectangle 35 (1).png",
+    "oldPrice": 6000.0,
+    "newPrice": 5500.0,
+    "color": "green"
+  },
+  {
+    "id": 12,
+    "title": "Sed at fermentum",
+    "img": "Rectangle 35 (2).png",
+    "oldPrice": 6500.0,
+    "newPrice": 6000.0,
+    "color": "blue"
+  },
+  {
+    "id": 13,
+    "title": "Ultricies condimentum imperdiet",
+    "img": "Rectangle 35 (3).png",
+    "oldPrice": 7000.0,
+    "newPrice": 6500.0,
+    "color": "cream"
+  },
+  {
+    "id": 14,
+    "title": "Vitae suspendisse sed",
+    "img": "Rectangle 35 (4).png",
+    "oldPrice": 1000.0,
+    "newPrice": 900.0,
+    "color": "green"
+  },
+  {
+    "id": 15,
+    "title": "Sed at fermentum",
+    "img": "Rectangle 35 (5).png",
+    "oldPrice": 2000.0,
+    "newPrice": 1900.0,
+    "color": "blue"
+  },
+  {
+    "id": 16,
+    "title": "Ultricies condimentum imperdiet",
+    "img": "Rectangle 35 (6).png",
+    "oldPrice": 3000.0,
+    "newPrice": 2900.0,
+    "color": "orange"
+  },
+  {
+    "id": 17,
+    "title": "Vitae suspendisse sed",
+    "img": "Rectangle 35 (7).png",
+    "oldPrice": 4000.0,
+    "newPrice": 3900.0,
+    "color": "green"
+  },
+  {
+    "id": 18,
+    "title": "Sed at fermentum",
+    "img": "Rectangle 35 (8).png",
+    "oldPrice": 5000.0,
+    "newPrice": 4900.0,
+    "color": "blue"
+  }
+]
