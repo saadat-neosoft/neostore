@@ -33,19 +33,50 @@ const FilterSection = ({
             <input
               type="checkbox"
               id="coaster-funiture"
-              name="coaster-funiture"
+              name="selectedBrand"
+              value="Coaster Furniture"
+              checked={filterOptions.selectedBrand.includes(
+                "Coaster Furniture"
+              )}
+              onChange={(event) => {
+                const { name } = event.target;
+                nameRef.current = name;
+                handleCheckboxChange(event);
+              }}
             />
             Coaster Furniture
           </label>
           <label htmlFor="fusion-dot" className="input-label">
-            <input type="checkbox" id="fusion-dot" name="fusion-dot" />
+            <input
+              type="checkbox"
+              id="fusion-dot"
+              name="selectedBrand"
+              value="Fusion Dot High Fashion"
+              checked={filterOptions.selectedBrand.includes(
+                "Fusion Dot High Fashion"
+              )}
+              onChange={(event) => {
+                const { name } = event.target;
+                nameRef.current = name;
+                handleCheckboxChange(event);
+              }}
+            />
             Fusion Dot High Fashion
           </label>
           <label htmlFor="unique-furniture" className="input-label">
             <input
               type="checkbox"
               id="unique-furniture"
-              name="unique-furniture"
+              name="selectedBrand"
+              value="Unique Furniture Restore"
+              checked={filterOptions.selectedBrand.includes(
+                "Unique Furniture Restore"
+              )}
+              onChange={(event) => {
+                const { name } = event.target;
+                nameRef.current = name;
+                handleCheckboxChange(event);
+              }}
             />
             Unique Furniture Restore
           </label>
@@ -53,7 +84,16 @@ const FilterSection = ({
             <input
               type="checkbox"
               id="dream-furniture"
-              name="dream-furniture"
+              name="selectedBrand"
+              value="Dream Furniture Flipping"
+              checked={filterOptions.selectedBrand.includes(
+                "Dream Furniture Flipping"
+              )}
+              onChange={(event) => {
+                const { name } = event.target;
+                nameRef.current = name;
+                handleCheckboxChange(event);
+              }}
             />
             Dream Furniture Flipping
           </label>
@@ -61,12 +101,32 @@ const FilterSection = ({
             <input
               type="checkbox"
               id="young-repurposed"
-              name="young-repurposed"
+              name="selectedBrand"
+              value="Young Repurposed"
+              checked={filterOptions.selectedBrand.includes("Young Repurposed")}
+              onChange={(event) => {
+                const { name } = event.target;
+                nameRef.current = name;
+                handleCheckboxChange(event);
+              }}
             />
             Young Repurposed
           </label>
           <label htmlFor="green-diy" className="input-label">
-            <input type="checkbox" id="green-diy" name="green-diy" />
+            <input
+              type="checkbox"
+              id="green-diy"
+              name="selectedBrand"
+              value="Green DIY furniture"
+              checked={filterOptions.selectedBrand.includes(
+                "Green DIY furniture"
+              )}
+              onChange={(event) => {
+                const { name } = event.target;
+                nameRef.current = name;
+                handleCheckboxChange(event);
+              }}
+            />
             Green DIY furniture
           </label>
         </div>
@@ -75,15 +135,48 @@ const FilterSection = ({
             Discount Offer
           </h3>
           <label htmlFor="cashback-20" className="input-label">
-            <input type="checkbox" id="cashback-20" name="cashback-20" />
+            <input
+              type="checkbox"
+              id="cashback-20"
+              name="selectedDiscount"
+              value="20%"
+              checked={filterOptions.selectedDiscount.includes("20%")}
+              onChange={(event) => {
+                const { name } = event.target;
+                nameRef.current = name;
+                handleCheckboxChange(event);
+              }}
+            />
             20% Cashback Offer
           </label>
           <label htmlFor="cashback-5" className="input-label">
-            <input type="checkbox" id="cashback-5" name="cashback-5" />
+            <input
+              type="checkbox"
+              id="cashback-5"
+              name="selectedDiscount"
+              value="5%"
+              checked={filterOptions.selectedDiscount.includes("5%")}
+              onChange={(event) => {
+                const { name } = event.target;
+                nameRef.current = name;
+                handleCheckboxChange(event);
+              }}
+            />
             5% Cashback Offer
           </label>
           <label htmlFor="discount-25" className="input-label">
-            <input type="checkbox" id="discount-25" name="discount-25" />
+            <input
+              type="checkbox"
+              id="discount-25"
+              name="selectedDiscount"
+              value="25%"
+              checked={filterOptions.selectedDiscount.includes("25%")}
+              onChange={(event) => {
+                const { name } = event.target;
+                nameRef.current = name;
+                handleCheckboxChange(event);
+              }}
+            />
             25% Discount Offer
           </label>
         </div>
@@ -92,7 +185,18 @@ const FilterSection = ({
             Rating Item
           </h3>
           <label htmlFor="rating-4" className="input-label">
-            <input type="checkbox" id="rating-4" name="rating-4" />
+            <input
+              type="checkbox"
+              id="rating-4"
+              name="selectedRating"
+              value="4"
+              checked={filterOptions.selectedRating.includes("4")}
+              onChange={(event) => {
+                const { name } = event.target;
+                nameRef.current = name;
+                handleCheckboxChange(event);
+              }}
+            />
             <span>
               <img src={starFilled} alt="" />
               <img src={starFilled} alt="" />
@@ -102,8 +206,19 @@ const FilterSection = ({
             </span>
             <span className="input-label__numOfReviews">(2341)</span>
           </label>
-          <label htmlFor="rating-4" className="input-label">
-            <input type="checkbox" id="rating-4" name="rating-4" />
+          <label htmlFor="rating-3" className="input-label">
+            <input
+              type="checkbox"
+              id="rating-3"
+              name="selectedRating"
+              value="3"
+              checked={filterOptions.selectedRating.includes("3")}
+              onChange={(event) => {
+                const { name } = event.target;
+                nameRef.current = name;
+                handleCheckboxChange(event);
+              }}
+            />
             <span>
               <img src={starFilled} alt="" />
               <img src={starFilled} alt="" />
@@ -113,8 +228,19 @@ const FilterSection = ({
             </span>
             <span className="input-label__numOfReviews">(1726)</span>
           </label>
-          <label htmlFor="rating-4" className="input-label">
-            <input type="checkbox" id="rating-4" name="rating-4" />
+          <label htmlFor="rating-2" className="input-label">
+            <input
+              type="checkbox"
+              id="rating-2"
+              name="selectedRating"
+              value="2"
+              checked={filterOptions.selectedRating.includes("2")}
+              onChange={(event) => {
+                const { name } = event.target;
+                nameRef.current = name;
+                handleCheckboxChange(event);
+              }}
+            />
             <span>
               <img src={starFilled} alt="" />
               <img src={starFilled} alt="" />
@@ -124,8 +250,19 @@ const FilterSection = ({
             </span>
             <span className="input-label__numOfReviews">(258)</span>
           </label>
-          <label htmlFor="rating-4" className="input-label">
-            <input type="checkbox" id="rating-4" name="rating-4" />
+          <label htmlFor="rating-1" className="input-label">
+            <input
+              type="checkbox"
+              id="rating-1"
+              name="selectedRating"
+              value="1"
+              checked={filterOptions.selectedRating.includes("1")}
+              onChange={(event) => {
+                const { name } = event.target;
+                nameRef.current = name;
+                handleCheckboxChange(event);
+              }}
+            />
             <span>
               <img src={starFilled} alt="" />
               <img src={starUnfilled} alt="" />

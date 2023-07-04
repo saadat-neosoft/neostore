@@ -2,12 +2,10 @@ import FilterSection from "../components/product/FilterSection";
 import "../styles/components/productGallery.scss";
 import clarity from "../assets/clarity-grid.svg";
 import list from "../assets/list.svg";
-
 import leftArrow from "../assets/keyboardArrowLeft.svg";
 import rightArrow from "../assets/keyboardArrowRight.svg";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-
 import productData from "../data/product.json";
 
 const ProductGallery = () => {
@@ -19,10 +17,13 @@ const ProductGallery = () => {
 
   const [filterOptions, setFilterOptions] = useState({
     selectedPriceRange: [],
-    selectedBrand: "",
+    selectedBrand: [],
     selectedColor: [],
-    selectedRating: 0,
+    selectedDiscount: [],
+    selectedRating: [],
   });
+
+  const [sortOption, setSortOption] = useState("");
 
   const toggleFilter = () => {
     setFilterVisible(!isFilterVisible);
@@ -66,30 +67,69 @@ const ProductGallery = () => {
     setFilterOptions((prevOptions) => ({
       ...prevOptions,
       selectedPriceRange:
-        name === "selectedPriceRange" // Check if the checkbox belongs to the price range
+        name === "selectedPriceRange"
           ? checked
-            ? [...prevOptions.selectedPriceRange, value] // Add the selected range
-            : prevOptions.selectedPriceRange.filter((range) => range !== value) // Remove the deselected range
-          : prevOptions.selectedPriceRange, // Maintain the current selected price range for non-price checkboxes
+            ? [...prevOptions.selectedPriceRange, value]
+            : prevOptions.selectedPriceRange.filter((range) => range !== value)
+          : prevOptions.selectedPriceRange,
       selectedColor:
-        name === "selectedColor" // Check if the checkbox belongs to the color
+        name === "selectedColor"
           ? checked
-            ? [...prevOptions.selectedColor, value] // Add the selected color
-            : prevOptions.selectedColor.filter((color) => color !== value) // Remove the deselected color
-          : prevOptions.selectedColor, // Maintain the current selected color for non-color checkboxes
+            ? [...prevOptions.selectedColor, value]
+            : prevOptions.selectedColor.filter((color) => color !== value)
+          : prevOptions.selectedColor,
+      selectedBrand:
+        name === "selectedBrand"
+          ? checked
+            ? [...prevOptions.selectedBrand, value]
+            : prevOptions.selectedBrand.filter((brand) => brand !== value)
+          : prevOptions.selectedBrand,
+      selectedDiscount:
+        name === "selectedDiscount"
+          ? checked
+            ? [...prevOptions.selectedDiscount, value]
+            : prevOptions.selectedDiscount.filter(
+                (discount) => discount !== value
+              )
+          : prevOptions.selectedDiscount,
+      selectedRating:
+        name === "selectedRating"
+          ? checked
+            ? [...prevOptions.selectedRating, value]
+            : prevOptions.selectedRating.filter(
+                (discount) => discount !== value
+              )
+          : prevOptions.selectedRating,
     }));
   };
 
-  useEffect(() => {
-    // console.log(filterOptions);
-    if (filterOptions[nameRef.current] !== "") {
+  useEffect(
+    () => {
+      // console.log(filterOptions);
+      if (filterOptions[nameRef.current] !== "") {
+        handleFilter();
+      }
+    },
+    // eslint-disable-next-line
+    [filterOptions]
+  );
+  useEffect(
+    () => {
       handleFilter();
-    }
-  }, [filterOptions]);
+    },
+
+    // eslint-disable-next-line
+    [sortOption]
+  );
 
   const handleFilter = () => {
-    const { selectedPriceRange, selectedBrand, selectedColor, selectedRating } =
-      filterOptions;
+    const {
+      selectedPriceRange,
+      selectedBrand,
+      selectedColor,
+      selectedRating,
+      selectedDiscount,
+    } = filterOptions;
 
     let filteredArray = productData;
 
@@ -97,9 +137,11 @@ const ProductGallery = () => {
 
     filteredArray = handleBrandFilter(filteredArray, selectedBrand);
     filteredArray = handleColorFilter(filteredArray, selectedColor);
+    filteredArray = handleDiscountFilter(filteredArray, selectedDiscount);
     filteredArray = handleRatingFilter(filteredArray, selectedRating);
-
+    filteredArray = sortProducts(filteredArray, sortOption);
     setFilteredProducts(filteredArray);
+    // console.log(filteredArray);
   };
 
   const handlePriceFilter = (arrayToFilter, selectedPriceRange) => {
@@ -114,7 +156,7 @@ const ProductGallery = () => {
     // );
 
     if (selectedPriceRange.length === 0) {
-      return arrayToFilter; // No price range filter selected, return the array as is
+      return arrayToFilter;
     }
 
     return arrayToFilter.filter((item) => {
@@ -127,32 +169,67 @@ const ProductGallery = () => {
   };
 
   const handleBrandFilter = (arrayToFilter, selectedBrand) => {
-    if (selectedBrand === "") {
-      return arrayToFilter; // No brand filter selected, return the array as is
+    if (selectedBrand.length === 0) {
+      return arrayToFilter;
     }
 
-    return arrayToFilter.filter((item) => item.brand === selectedBrand);
+    return arrayToFilter.filter((item) => {
+      return selectedBrand.some((brand) => {
+        // console.log(range);
+        return item.brand === brand;
+      });
+    });
   };
 
   const handleColorFilter = (arrayToFilter, selectedColor) => {
     if (selectedColor.length === 0) {
-      return arrayToFilter; // No price range filter selected, return the array as is
+      return arrayToFilter;
     }
 
     return arrayToFilter.filter((item) => {
       return selectedColor.some((color) => {
         // console.log(range);
-        return item.color == color;
+        return item.color === color;
+      });
+    });
+  };
+  const handleDiscountFilter = (arrayToFilter, selectedDiscount) => {
+    if (selectedDiscount.length === 0) {
+      return arrayToFilter;
+    }
+
+    return arrayToFilter.filter((item) => {
+      return selectedDiscount.some((discount) => {
+        // console.log(range);
+        return item.discount === discount;
       });
     });
   };
 
   const handleRatingFilter = (arrayToFilter, selectedRating) => {
-    if (selectedRating === 0) {
-      return arrayToFilter; // No rating filter selected, return the array as is
+    if (selectedRating.length === 0) {
+      return arrayToFilter;
     }
 
-    return arrayToFilter.filter((item) => item.rating >= selectedRating);
+    return arrayToFilter.filter((item) => {
+      return selectedRating.some((rating) => {
+        return item.rating === rating;
+      });
+    });
+  };
+
+  const sortProducts = (products, sortOption) => {
+    const sortedArray = [...products];
+
+    if (sortOption === "lowToHigh") {
+      sortedArray.sort((a, b) => a.newPrice - b.newPrice);
+    } else if (sortOption === "highToLow") {
+      sortedArray.sort((a, b) => b.newPrice - a.newPrice);
+    } else if (sortOption === "popular") {
+      sortedArray.sort((a, b) => a.rating - b.rating);
+    }
+
+    return sortedArray;
   };
 
   return (
@@ -167,11 +244,16 @@ const ProductGallery = () => {
       <div className="product-gallery__container">
         <div className="product-gallery__sort-section">
           <span className="product-gallery__sort-section__sort">Sort By:</span>
-          <select className="product-gallery__sort-section__dropdown">
+          <select
+            className="product-gallery__sort-section__dropdown"
+            onChange={(e) => {
+              setSortOption(e.target.value);
+            }}
+          >
             <option value="Best Match">Best Match</option>
-            <option value="Best Match">Popular</option>
-            <option value="Best Match">High to Low</option>
-            <option value="Best Match">Low to High</option>
+            <option value="popular">Popular</option>
+            <option value="highToLow">High to Low</option>
+            <option value="lowToHigh">Low to High</option>
           </select>
           <span className="product-gallery__sort-section__view">View</span>
           <img src={clarity} alt="" />
